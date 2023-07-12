@@ -5,7 +5,8 @@ const Papa = require('papaparse')
 export default {
     list: async (): Promise<Product[]> => {
         try {
-            const response = await axios.get("https://docs.google.com/spreadsheets/d/e/2PACX-1vRrO2Vt3thB9DYQL6fpVBRA-lJAPgO9kNRAClQDhUrQa7RMM-YTLsyfRQkMNJELE8apKtzo-ikffrhQ/pub?output=csv", {
+            const response = await axios.get("https://docs.google.com/spreadsheets/d/e/2PACX-1vRrO2Vt3thB9DYQL6fpVBRA-lJAPgO9kNRAClQDhUrQa7RMM-YTLsyfRQkMNJELE8apKtzo-ikffrhQ/pub?output=csv", 
+            {
                 responseType: "blob",
             });
             const results = await new Promise<{ data: Product[] }>((resolve, reject) => {
