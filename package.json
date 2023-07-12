@@ -1,0 +1,29 @@
+{
+  "name": "canciani.pedidos",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.7.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@types/node": "20.4.1",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "axios": "^1.4.0",
+    "eslint": "8.44.0",
+    "eslint-config-next": "^12.0.4",
+    "framer-motion": "^10.12.18",
+    "next": "13.4.9",
+    "papaparse": "^5.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sweetalert": "^2.1.2",
+    "typescript": "5.1.6"
+  }
+}
