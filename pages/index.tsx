@@ -131,22 +131,22 @@ const Home: React.FC<Props> = ({ products }) => {
         </ModalContent>
       </Modal>
       {Boolean(cart.length) && (
-        <Flex position="sticky" bottom={16} justifyContent="center" alignItems="center">
-          {/* @ts-ignore */}
-          <Button
-            width="268px"
-            colorScheme="green"
-            as={Link}
-            isExternal
-            href={`https://wa.me/3483521462?text=${encodeURIComponent(text)}`}
-          >
-            Completar pedido
-          </Button>
-        </Flex>
+          <Flex position="sticky" bottom={16} justifyContent="center" alignItems="center">
+            {/* @ts-ignore */}
+            <Button
+              width="500px"
+              colorScheme="green"
+              as={Link}
+              isExternal
+              href={`https://wa.me/3483521462?text=${encodeURIComponent(text)}`}
+            >
+              Completar pedido
+            </Button>
+          </Flex>
       )}
       {Boolean(cart.length) && (
         <Flex position="sticky" bottom={6} justifyContent="center" alignItems="center">
-          <Button width="268px" colorScheme="red" backgroundColor="red" color="white"
+          <Button width="500px" colorScheme="red" backgroundColor="red" color="white"
             onClick={() => setCart([])}>
             Cancelar pedido
           </Button>
