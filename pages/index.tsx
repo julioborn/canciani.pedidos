@@ -68,6 +68,7 @@ const Home: React.FC<Props> = ({ products }) => {
     const productCount = cart.reduce(
       (countMap, product) => {
         if (countMap.has(product.producto)) {
+          // @ts-ignore
           countMap.set(product.producto, countMap.get(product.producto) + 1);
         } else {
           countMap.set(product.producto, 1);
@@ -77,6 +78,7 @@ const Home: React.FC<Props> = ({ products }) => {
       new Map<string, number>()
     );
     let message = '';
+    // @ts-ignore
     for (const [producto, cantidad] of productCount.entries()) {
       message += `* ${producto} (${cantidad} unidades)\n`;
     }
